@@ -1,0 +1,12 @@
+{
+    "id": "SlaySelectionCounter",
+    "name": "Slay Selection Counter",
+    "author": "Tomasapan",
+    "description": "Shows how many cards you have selected (e.g. 7/10) on any pick-several-cards screen, such as the Sealed Deck modifier.",
+    "version": "0.1.0",
+    "has_pck": false,
+    "has_dll": true,
+    "dependencies": [],
+    "affects_gameplay": false,
+    "min_game_version": "0.107.1"
+}
