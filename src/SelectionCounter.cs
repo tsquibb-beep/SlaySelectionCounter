@@ -1,5 +1,4 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
 using Godot;
@@ -116,7 +115,13 @@ internal sealed class SelectionCounter
                 return;
             }
 
-            int count = (_selectedField.GetValue(_screen) as ICollection)?.Count ?? 0;
+            // HashSet<T> implements IReadOnlyCollection<T> but not the non-generic ICollection.
+            if (_selectedField.GetValue(_screen) is not IReadOnlyCollection<CardModel> selected)
+            {
+                throw new InvalidOperationException($"{_selectedField.Name} is not a card collection.");
+            }
+
+            int count = selected.Count;
             if (_badge != null)
             {
                 // Cheap, and keeps the badge put if the window is resized mid-selection.
