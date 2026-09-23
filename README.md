@@ -24,7 +24,7 @@ read in preference to the one in the mod folder.
 | Setting          | Default     | What it does |
 |------------------|-------------|--------------|
 | `enabled`        | `true`      | Master switch. |
-| `style`          | `"prompt"`  | `"prompt"` adds the count to the instructions at the bottom of the screen. `"badge"` shows a large counter above the Confirm button. `"both"` shows both. |
+| `style`          | `"prompt"`  | `"prompt"` adds the count to the instructions at the bottom of the screen. `"badge"` shows a large counter above the Confirm button (experimental — its placement has had less testing). `"both"` shows both. |
 | `badgeFontSize`  | `56`        | Size of the badge counter. |
 | `badgeColor`     | `"#fff6e2"` | Badge colour while you are still picking. |
 | `badgeFullColor` | `"#efc851"` | Colour once the selection is full (the prompt counter uses it too). |

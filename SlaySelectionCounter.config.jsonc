@@ -10,6 +10,7 @@
     // How the count is shown:
     //   "prompt" - appends "(7/10)" to the instruction text at the bottom of the screen
     //   "badge"  - a large separate counter above where the Confirm button appears
+    //              (experimental: its placement has had less testing than "prompt")
     //   "both"   - both of the above
     "style": "prompt",
 
